@@ -7,11 +7,11 @@ This solution also automates the installation of key dependencies such as **WSL,
 
 ## Features
 
-### ✅ Automated Docker Image Creation
+### ✅ Isolated Docker Image Creation
 - Creates an independent Docker image for each new instance, ensuring isolated and customizable environments.
 
 ### ✅ Automated Setup for Dependencies
-- The installation process covers **Docker, WSL, Ubuntu, and NVIDIA Toolkit** (if applicable), making it easier for users on a clean system.
+- The installation process covers **WSL, Ubuntu, and NVIDIA Toolkit** (if applicable), making it easier for users on a clean system.
 
 ### ✅ Simplified Launch Process
 - A launcher script and compiled executable streamline the process of starting and stopping the **Docker container**, logging output, and even opening your default web browser when the service is ready.
@@ -81,6 +81,8 @@ Once the installation is complete, simply **run the generated executable** (e.g.
 - **Double-click** the generated executable to launch the Docker container.
 - If the container is already running, the script will **stop it and restart as needed**.
 
+**Note:** Each created **Comfy UI** project runs in its own isolated Docker environment, ensuring that different instances do not interfere with each other. All key elements remain independent, preventing conflicts between different setups.
+
 ### 🔗 Accessing the Application
 - The application is accessible at **[http://127.0.0.1:8188](http://127.0.0.1:8188)**.
 - Your **default browser** will open automatically once the service is up.
@@ -110,9 +112,13 @@ Once the installation is complete, simply **run the generated executable** (e.g.
 I do **not** claim any intellectual property rights over third-party **code, plugins, or libraries** used in this project. All rights and license terms from the original creators have been **fully respected and adhered to**.
 
 ## Contact
+
 For questions, suggestions, or any other inquiries, you can reach me at:
 
-**Telegram:** contact_psewdon1m
-**Email:** contact.psewdon1m@gmail.com
-**Behance:** psewdon1m
-**GitHub:** psewdon1m
+**Telegram:** [contact_psewdon1m](https://t.me/contact_psewdon1m)  
+
+**Email:** [contact.psewdon1m@gmail.com](mailto:contact.psewdon1m@gmail.com)  
+
+**Behance:** [psewdon1m](https://www.behance.net/psewdon1m)  
+
+**GitHub:** [psewdon1m](https://github.com/psewdon1m)  
