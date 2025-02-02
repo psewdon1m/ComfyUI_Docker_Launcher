@@ -1,11 +1,9 @@
 # Comfy UI Docker Launcher
 
-**Created by psewdon1m for the community!**
-
 ## Overview
 The **Comfy UI Docker Launcher** project is designed to simplify the process of running custom **Comfy UI** workflows via **Docker**. With this project, you can easily create isolated **Comfy UI** environments that include all your required versions of nodes, plugins, and libraries—without having to rebuild the original repository each time.
 
-This solution also automates the installation of key dependencies such as **Docker, WSL, Ubuntu, and NVIDIA Toolkit**, making it ideal for users with a fresh system who may not have any prior experience with these tools.
+This solution also automates the installation of key dependencies such as **WSL, Ubuntu, and NVIDIA Toolkit**, making it ideal for users with a fresh system who may not have any prior experience with these tools.
 
 ## Features
 
@@ -24,18 +22,16 @@ This solution also automates the installation of key dependencies such as **Dock
 ### ✅ Respect for Third-Party Licenses
 - All intellectual property rights of third-party code, libraries, and plugins used in this project are fully respected. All license terms and conditions have been adhered to.
 
-## Prerequisites
+## Requirements
 Before running the project, ensure that your system meets the following requirements:
 
 - **Operating System**: Windows (the project uses Windows-specific commands and libraries)
-- **Docker Desktop**: Installed and configured with **WSL2 integration**
-- **WSL & Ubuntu**: The automated installation script will help set this up if not already installed
-- **NVIDIA Toolkit**: *(Optional)* For users with **NVIDIA GPUs**; the installation script can install this as well
-- **Internet Connection**: Required for downloading dependencies and Docker images
-
-> **Note:** Even on a completely clean system (with no Python installed), the provided scripts are designed to guide you through the installation process.
+- **NVIDIA Drivers**: The latest version of **NVIDIA drivers** must be installed on the host machine
+- **Docker**: Installed, configured, and logged in to Docker Desktop
 
 ## Installation
+
+For correct operation, your system must have a working WSL with **NVIDIA Toolkit** installed. If you have already set up certain components (e.g., WSL, Ubuntu, or NVIDIA Toolkit), you may skip the corresponding steps and proceed to the next one.
 
 ### 📌 Clone the Repository
 Open your terminal (or GitHub Desktop) and clone the repository:
@@ -45,16 +41,25 @@ git clone https://github.com/your-username/comfy-ui-docker-launcher.git
 cd comfy-ui-docker-launcher
 ```
 
-### 📌 Run the Automated Installer
-The project includes scripts to install and configure **Docker, WSL, Ubuntu, and the NVIDIA Toolkit** (if needed). Follow these steps:
+### 📌 Install Required Components
+The repository includes **automated scripts** to assist with the installation of all required dependencies, including:
 
-#### 🚀 Docker Setup
-1. Install **Docker Desktop** from [Docker's official website](https://www.docker.com/) and log in with your account.
+1. **WSL (Windows Subsystem for Linux)**
+2. **Ubuntu Linux distribution**
+3. **NVIDIA Toolkit for GPU acceleration**
 
-#### 🚀 Automated WSL, Ubuntu, and NVIDIA Toolkit Setup
-1. Run the provided installation scripts in the project directory.
-2. These scripts will guide you through the setup process.
-3. *(During the installation, Docker may prompt you to enable WSL integration—please follow those instructions.)*
+If these components are not installed, simply run the provided installation scripts located in the repository, and they will handle the setup process automatically.
+
+### 📌 Install Required Components
+The repository includes **automated scripts** to assist with the installation of all required dependencies, which **must be installed in the following order**:
+
+1. **WSL (Windows Subsystem for Linux)**
+2. **Ubuntu Linux distribution**
+3. **NVIDIA Toolkit for GPU acceleration**
+
+If these components are not installed, simply run the provided installation scripts located in the repository in the specified order, and they will handle the setup process automatically.
+
+> ⚠ **Note:** During the installation process, **Docker may request user actions multiple times**. If prompted, make sure to select options like **"Restart with WSL integration"** or similar, depending on the exact request from Docker. These steps are crucial for proper setup and functionality.
 
 ### 📌 Configure the Project
 The **main launcher script** will:
@@ -62,7 +67,7 @@ The **main launcher script** will:
 - Copy the original **Comfy UI** repository (used as a template) into the new directory.
 - Update the `docker-compose.yml` file with the correct paths and Docker image name.
 - Build and tag the **Docker image**.
-- Compile a **Python launcher script** into an executable with **PyInstaller**.
+- Compile a **Python launcher script**
 - Generate shortcuts for important folders (**models, output, workflows**).
 
 ### 📌 Launch the Application
@@ -98,12 +103,8 @@ Once the installation is complete, simply **run the generated executable** (e.g.
 - If an error occurs during the **automated installation process**, carefully **read the error message**.
 - The error log often provides clues about what went wrong.
 - You may need to:
-  - Check your **internet connection**
   - Verify that **prerequisites are installed**
   - Refer to the documentation for **Docker/WSL/NVIDIA Toolkit**
-
-### ❓ Need Further Assistance?
-If you have any questions or issues that aren’t covered here, feel free to reach out through the **contact channels listed below**.
 
 ## License & Third-Party Rights
 I do **not** claim any intellectual property rights over third-party **code, plugins, or libraries** used in this project. All rights and license terms from the original creators have been **fully respected and adhered to**.
@@ -111,10 +112,7 @@ I do **not** claim any intellectual property rights over third-party **code, plu
 ## Contact
 For questions, suggestions, or any other inquiries, you can reach me at:
 
-📩 **Telegram:** [your Telegram handle]  
-📸 **Instagram:** [your Instagram handle]  
-🎨 **Behance:** [your Behance profile]  
-🐙 **GitHub:** [your GitHub profile]  
-
----
-**⭐ If you found this project helpful, consider giving it a star! ⭐**
+**Telegram:** contact_psewdon1m
+**Email:** contact.psewdon1m@gmail.com
+**Behance:** psewdon1m
+**GitHub:** psewdon1m
