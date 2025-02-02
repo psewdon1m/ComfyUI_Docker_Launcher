@@ -119,6 +119,4 @@ For questions, suggestions, or any other inquiries, you can reach me at:
 
 **Email:** [contact.psewdon1m@gmail.com](mailto:contact.psewdon1m@gmail.com)  
 
-**Behance:** [psewdon1m](https://www.behance.net/psewdon1m)  
-
 **GitHub:** [psewdon1m](https://github.com/psewdon1m)  
