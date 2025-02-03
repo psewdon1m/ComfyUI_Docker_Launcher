@@ -38,8 +38,8 @@ For correct operation, your system must have a working WSL with **NVIDIA Toolkit
 Open your terminal (or GitHub Desktop) and clone the repository:
 
 ```bash
-git clone https://github.com/your-username/comfy-ui-docker-launcher.git
-cd comfy-ui-docker-launcher
+git clone https://github.com/psewdon1m/ComfyUI_Docker_Launcher.git
+cd ComfyUI_Docker_Launcher
 ```
 
 ### 📌 Install Required Components
