@@ -43,15 +43,6 @@ cd ComfyUI_Docker_Launcher
 ```
 
 ### 📌 Install Required Components
-The repository includes **automated scripts** to assist with the installation of all required dependencies, including:
-
-1. **WSL (Windows Subsystem for Linux)**
-2. **Ubuntu Linux distribution**
-3. **NVIDIA Toolkit for GPU acceleration**
-
-If these components are not installed, simply run the provided installation scripts located in the repository, and they will handle the setup process automatically.
-
-### 📌 Install Required Components
 The repository includes **automated scripts** to assist with the installation of all required dependencies, which **must be installed in the following order**:
 
 1. **WSL (Windows Subsystem for Linux)**
