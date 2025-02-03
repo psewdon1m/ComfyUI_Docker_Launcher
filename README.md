@@ -25,6 +25,7 @@ This solution also automates the installation of key dependencies such as **WSL,
 ## Requirements
 Before running the project, ensure that your system meets the following requirements:
 
+- **Virtualization** must be enabled in your system BIOS settings
 - **Operating System**: Windows (the project uses Windows-specific commands and libraries)
 - **NVIDIA Drivers**: The latest version of **NVIDIA drivers** must be installed on the host machine
 - **Docker**: Installed, configured, and logged in to Docker Desktop
@@ -87,9 +88,21 @@ Once the installation is complete, simply **run the generated executable** (e.g.
 - The application is accessible at **[http://127.0.0.1:8188](http://127.0.0.1:8188)**.
 - Your **default browser** will open automatically once the service is up.
 
+### 🛠️ Preinstalled Components
+
+- ComfyUI Manager is preinstalled in this build, allowing easy management of nodes and extensions directly from the interface.
+
 ### 📂 Managing Files
 - Shortcuts to the **models, output, and workflows** directories are created in the project folder for your convenience.
 - These shortcuts can be **moved or copied** as needed.
+
+### Related Projects
+
+This project is based on and extends the functionality of the following repositories:
+
+- [ComfyUI](https://github.com/comfyanonymous/ComfyUI) - A powerful, modular UI framework for generative AI workflows
+
+- [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) - A management tool for handling ComfyUI nodes and extensions
 
 ## Troubleshooting & FAQ
 
@@ -113,7 +126,7 @@ I do **not** claim any intellectual property rights over third-party **code, plu
 
 ## Contact
 
-For questions, suggestions, or any other inquiries, you can reach me at:
+For questions, suggestions, or any other inquiries connect me via:
 
 **Telegram:** [contact_psewdon1m](https://t.me/contact_psewdon1m)  
 
